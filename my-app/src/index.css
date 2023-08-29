@@ -1,14 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  font-family: "MuseoModerno";
+  /* font-family: "MuseoModerno";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   font-style: 1, 900;
   background-color: black;
-  color: white;
+  color: white; */
 }
 
-body {
+
+/* body {
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -27,7 +32,6 @@ h1 {
 
 form {
   display: flex;
-  /* float: right; */
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -86,3 +90,4 @@ ul.coin-list {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
+ */
