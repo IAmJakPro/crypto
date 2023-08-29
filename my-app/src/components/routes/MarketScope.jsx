@@ -12,9 +12,9 @@ export default function MarketScope() {
     return <h1>Loading...</h1>;
   } else {
     return (
-      <div>
+      <div className="container pt-60 pb-40">
+        {/* <CoinDetails renderedCoin={renderedCoin} /> */}
         <CoinMenu cryptoArray={cryptoObject.data} />
-        <CoinDetails renderedCoin={renderedCoin} />
         <CoinChange cryptoArray={cryptoObject.data} />
       </div>
     );

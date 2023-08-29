@@ -15,19 +15,26 @@ export default function CoinChange({ cryptoArray }) {
 
     return displayedCoins.map((coin) => {
       const roundedChange = Math.round(coin.changePercent24Hr * 10) / 10;
-      const backgroundColor =
-        coin.changePercent24Hr < 0 ? "lightcoral" : "lightgreen";
+      const color =
+        coin.changePercent24Hr < 0 ? "text-red-500" : "text-green-500";
 
       return (
-        <div
+        <tr
           key={coin.symbol}
-          className="coin-change"
-          style={{ backgroundColor }}
+          //style={{ backgroundColor }}
           onClick={() => handleCoinClick(coin)}
+          className="border-b text-sm font-semibold"
         >
-          <p>{`${coin.name} (${coin.symbol})`}</p>
-          <p>Percent Change: {roundedChange}%</p>
-        </div>
+          <td className="py-3 px-4 text-dark">
+            <div className="flex">
+              <span className="mr-2"><img src={coin.imgSource} alt={coin.name} width={20} height={20} /></span>
+              <span>
+                {`${coin.name} (${coin.symbol})`}
+              </span>
+            </div>
+          </td>
+          <td className={"py-3 px-4 font-bold " + color}>{roundedChange}%</td>
+        </tr>
       );
     });
   };
@@ -46,10 +53,20 @@ export default function CoinChange({ cryptoArray }) {
   };
 
   return (
-    <div>
-      <div id="coin-change-container">{renderCoinChangeItems()}</div>
-      <div className="pagination-buttons">
-        <button onClick={handlePreviousPage} disabled={currentPage === 0}>
+    <div className="mt-7">
+      <table className="w-full table">
+        <thead>
+          <tr className="border-b text-dark text-sm font-semibold">
+            <th className="py-3 px-4 text-left">Currency</th>
+            <th className="py-3 px-4 text-left">Percent Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          {renderCoinChangeItems()}
+        </tbody>
+      </table>
+      <div className="m-auto  flex justify-between gap-4 mt-10">
+        <button onClick={handlePreviousPage} disabled={currentPage === 0} className="w-1/2 p-2 bg-gray-200 text-dark text-sm rounded font-semibold">
           Previous
         </button>
         <button
@@ -57,6 +74,7 @@ export default function CoinChange({ cryptoArray }) {
           disabled={
             currentPage === Math.ceil(cryptoArray.length / coinsPerPage) - 1
           }
+          className="p-2 bg-gray-200 text-dark text-sm rounded font-semibold w-1/2"
         >
           Next
         </button>

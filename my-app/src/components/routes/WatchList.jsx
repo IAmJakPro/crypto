@@ -6,7 +6,7 @@ export default function WatchList() {
   const [cryptoObject, setCryptoObject] = useState(useLoaderData());
 
   return (
-    <div>
+    <div className="pt-4 container">
       <WatchListForm cryptoArray={cryptoObject.data} />
     </div>
   );

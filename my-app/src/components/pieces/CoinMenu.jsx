@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 export default function CoinMenu({ cryptoArray }) {
   const [currentPage, setCurrentPage] = useState(0);
@@ -8,20 +10,27 @@ export default function CoinMenu({ cryptoArray }) {
     const parsedPrice = parseFloat(price);
 
     return (
-      <li className="coin-item" key={symbol}>
-        <p className="coin-name-symbol">{`${name} (${symbol})`}</p>
-        <img
-          className="coin-image"
-          src={imgSource}
-          onError={(e) => {
-            e.target.src = "https://i.ibb.co/zRLmrMN/shitcoin.png";
-          }}
-          alt={symbol}
-        />
-        <p className="coin-price">{`Real-Time Price: $${parsedPrice.toFixed(
+      <SwiperSlide key={symbol}>
+        <div className="flex">
+          <img
+            className="h-full"
+            src={imgSource}
+            onError={(e) => {
+              e.target.src = "https://i.ibb.co/zRLmrMN/shitcoin.png";
+            }}
+            alt={symbol}
+            width={50}
+            height={50}
+          />
+          <div className="ml-3">
+            <p className="font-semibold">{name}</p>
+            <small>({symbol})</small>
+          </div>
+        </div>
+        <p className="text-xs mt-2">Real-Time Price: <span className="text-sm font-semibold">{parsedPrice.toFixed(
           2
-        )}`}</p>
-      </li>
+        )}</span></p>
+      </SwiperSlide>
     );
   };
 
@@ -35,7 +44,7 @@ export default function CoinMenu({ cryptoArray }) {
     // console.log(cryptoArray);
     const displayedCoins = cryptoArray.slice(start, end);
 
-    return displayedCoins.map((coin) => {
+    return cryptoArray.map((coin) => {
       const { symbol, name, priceUsd, imgSource } = coin;
       // console.log(imgSource);
       return createCoinMenuItem(symbol, name, priceUsd, imgSource);
@@ -55,8 +64,27 @@ export default function CoinMenu({ cryptoArray }) {
     }
   };
 
+
   return (
-    <div className="coin-menu">
+    <div>
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={7}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        autoplay={{ delay: 2000 }}
+
+        //navigation
+        modules={[Navigation, Autoplay]}
+      >
+        {renderCoinMenuItems()}
+      </Swiper>
+    </div>
+  );
+}
+
+
+{/* <div className="coin-menu">
       <button onClick={handlePreviousPage} disabled={currentPage === 0}>
         Previous
       </button>
@@ -71,6 +99,4 @@ export default function CoinMenu({ cryptoArray }) {
           Next
         </button>
       </div>
-    </div>
-  );
-}
+    </div> */}

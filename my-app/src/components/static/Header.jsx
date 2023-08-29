@@ -6,7 +6,7 @@ import Nav from "./Nav.jsx";
 function Header() {
   return (
     <div
-      className="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+      className="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent py-5"
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
@@ -43,12 +43,12 @@ function Header() {
                 <input
                   type="text"
                   placeholder="Email"
-                  class="bordder-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-1 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
+                  class="border-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-2 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
                 />
                 <input
                   type="passowrd"
                   placeholder="Password"
-                  class="bordder-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-1 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
+                  class="border-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-2 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
                 />
               </div>
               <div className="flex">

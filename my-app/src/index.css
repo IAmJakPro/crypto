@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* font-family: "MuseoModerno";
+
+
+/* * {
+   font-family: "MuseoModerno";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   font-style: 1, 900;
   background-color: black;
-  color: white; */
+  color: white;
 }
 
 

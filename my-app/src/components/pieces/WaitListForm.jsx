@@ -31,18 +31,14 @@ const WaitlistForm = () => {
     }
 
     return (
-      <form className="form-wrapper" onSubmit={submit}>
-        <input
-          type="email"
-          required
-          placeholder="Email"
-          className="formInput formTextInput"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button type="submit" className="formInput formSubmitButton">
-          Join Waitlist
-        </button>
+      <form className="" onSubmit={submit}>
+        <div class="mt-6 mx-auto flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required className="min-w-0 flex-auto rounded-md border bg-[#FCFDFE] px-3.5 py-2 text-dark shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6" placeholder="Enter your email" value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Join Waitlist</button>
+        </div>
         {error && <div className="error">{error}</div>}
       </form>
     );
@@ -50,21 +46,17 @@ const WaitlistForm = () => {
 
   return (
     <div className="container">
-      <div className="column">
-        <img width="154" height="27" src="/logo.svg" alt="Logo" />
-        <h1 className="title">
+      <div className="text-center">
+        {/* <img width="154" height="27" src="/logo.svg" alt="Logo" /> */}
+        <h1 className="mb-5 font-bold leading-tight text-dark sm:text-[42px] lg:text-[52px] xl:text-[62px]">
           Join Our Waitlist
-          <br />
         </h1>
-        <div className="subtitle">
+        <p className="mb-10 mx-auto max-w-[500px] text-base text-body-color text-center">
           Be the first to get access to our amazing crypto exchange platform!
           Sign up now to secure your spot on our waitlist and receive exciting
           updates and early access privileges.
-        </div>
+        </p>
         <Form />
-      </div>
-      <div className="column">
-        <img width="100%" height="100%" src="/code.svg" alt="Code" />
       </div>
     </div>
   );

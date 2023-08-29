@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import Root from "./components/Root.jsx";
 import Welcome from './components/routes/Welcome.jsx';
 import MarketScope from './components/routes/MarketScope';
 import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
-import './index.css';
 import MyPortfolio from './components/pieces/MyPortfolio';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import './index.css';
 
 
 const fetchAndCurateCoinData = async () => {
