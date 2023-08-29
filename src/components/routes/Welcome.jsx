@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 
 export default function Welcome() {
   return (
@@ -52,7 +51,7 @@ export default function Welcome() {
               </ul>
               <div className="wow fadeInUp text-center" data-wow-delay=".3s">
                 <img
-                  src="http://localhost:3000/images/hero/brand.svg"
+                  src="/images/hero/hero-image.jpg"
                   alt="image"
                   className="mx-auto w-full max-w-[250px] opacity-50 transition duration-300 ease-in-out hover:opacity-100"
                 />
@@ -67,7 +66,7 @@ export default function Welcome() {
             >
               <div className="mt-16">
                 <img
-                  src="http://localhost:3000/images/hero/hero-image.jpg"
+                  src="/images/hero/hero-image.jpg"
                   alt="hero"
                   className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                 />
