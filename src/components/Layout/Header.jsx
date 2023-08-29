@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import Nav from "./Nav.jsx";
+import Input from "../Input";
 
 function Header() {
   return (
@@ -14,11 +15,6 @@ function Header() {
             <NavLink to="/" className="navbar-logo block w-full py-5">
               <h1 className="text-2xl font-semibold">Cryptox</h1>
             </NavLink>
-            {/* <img
-                src="assets/images/logo/logo-white.svg"
-                alt="logo"
-                className="header-logo w-full"
-              /> */}
           </div>
           <div className="flex w-full items-center justify-between px-4">
             <div className="w-6/12">
@@ -40,16 +36,8 @@ function Header() {
             </div>
             <form className="w-6/12 hidden justify-end items-center pr-16 sm:flex lg:pr-0">
               <div className="flex">
-                <input
-                  type="text"
-                  placeholder="Email"
-                  class="border-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-2 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
-                />
-                <input
-                  type="passowrd"
-                  placeholder="Password"
-                  class="border-[#E9EDF4] w-full rounded border bg-[#FCFDFE] py-1 px-2 mx-1 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none"
-                />
+                <Input placeholder="Email" />
+                <Input type="password" placeholder="Password" />
               </div>
               <div className="flex">
                 <a

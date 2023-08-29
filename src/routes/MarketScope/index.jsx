@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import CoinMenu from "../pieces/CoinMenu.jsx";
-import CoinDetails from "../pieces/CoinDetails.jsx";
-import CoinChange from "../pieces/CoinChange";
+import CoinMenu from "./components/CoinMenu.jsx";
+import CoinDetails from "./components/CoinDetails.jsx";
+import CoinChange from "./components/CoinChange.jsx";
 
 export default function MarketScope() {
   const [cryptoObject, setCryptoObject] = useState(useLoaderData());

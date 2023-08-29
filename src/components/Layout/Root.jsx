@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./static/Footer.jsx";
-import Header from "./static/Header.jsx";
+import Footer from "./Footer.jsx";
+import Header from "./Header.jsx";
 /* import CoinDetails from './pieces/CoinDetails';
 import WatchList from './routes/WatchList';
 import CoinChange from './pieces/CoinChange';

@@ -57,14 +57,6 @@ export default function Footer() {
         </div>
 
         <div>
-          <span className="absolute left-0 top-0 z-[-1]">
-            <img src="assets/images/footer/shape-1.svg" alt="" />
-          </span>
-
-          <span className="absolute bottom-0 right-0 z-[-1]">
-            <img src="assets/images/footer/shape-3.svg" alt="" />
-          </span>
-
           <span className="absolute top-0 right-0 z-[-1]">
             <svg
               width="102"

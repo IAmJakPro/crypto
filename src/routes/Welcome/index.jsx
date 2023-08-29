@@ -23,12 +23,6 @@ export default function Welcome() {
                 Explore the world of digital currencies and make informed investment
                 decisions. Start tracking your favorite cryptocurrencies now!
               </p>
-              {/* <p
-                className="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
-              >
-                Explore the world of digital currencies and make informed investment
-                decisions. Start tracking your favorite cryptocurrencies now!
-              </p> */}
               <ul className="mb-12 flex flex-wrap items-center justify-center">
                 <li>
                   <a
