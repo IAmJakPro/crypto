@@ -1,169 +1,70 @@
-<p align="center">
-    <a href=""><img src="https://img.shields.io/pypi/l/ansicolortags.svg" /></a>
-    <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /></a>
-    <a href=""><img src="https://badgen.net/github/commits/jonrosenblum/Crypto-Exchange" /></a>
-    <br>
-    <a href=""><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
-    <a href=""><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" /></a>
-    <a href=""><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /></a>
-    <br>
-    <a href=""><img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" /></a>
+# Getting Started with Create React App
 
-</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<h1 align="center"><b>CryptoX</b></h1>
-<h4 align="center">A sophisticated cryptocurrency exchange built using React that offers a seamless and feature-rich trading experience similar to real-world exchanges. Whether you're a seasoned trader or a newcomer to the world of cryptocurrency, CryptoX has been meticulously designed and developed to cater to all your trading needs.</h4>
+## Available Scripts
 
-<p align="center">
-    <img src="" alt="Project Banner" width=60% height=60%/>
-</p>
+In the project directory, you can run:
 
-## Table of Contents
+### `npm start`
 
-- [Introduction](#introduction)
-- [Technical Requirements](#technical-requirements)
-- [Project Structure](#project-structure)
-- [Key Functionalities](#key-functionalities)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Introduction
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-CryptoX is a cutting-edge cryptocurrency tracker platform that provides users with a seamless and intuitive interface for tracking a wide range of digital assets. Our goal is to empower both novice and experienced traders with the tools they need to make informed decisions and execute trades with confidence.
+### `npm test`
 
-## Technical Requirements
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To run CryptoX locally, you need the following:
+### `npm run build`
 
--
--
--
--
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Project Directory Hierarchy
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Upon successful setup (see **Getting Started**), you should see the following project directory hierarchy.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
+### `npm run eject`
 
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
--
--
--
--
--
--
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Key Functionalities
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-CryptoX offers the following functionalities:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Portfolio Management:**
+## Learn More
 
-- Enable users to add, edit, and remove cryptocurrencies from their portfolio.
-- Display real-time value of their holdings based on current cryptocurrency prices.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Transaction Tracking:**
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- Allow users to record buy, sell, and transfer transactions for accurate portfolio performance tracking.
-- Calculate and display gains and losses for each transaction.
+### Code Splitting
 
-**Real-time Data Updates:**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Integrate with cryptocurrency APIs for real-time price updates.
-- Reflect changes in cryptocurrency prices instantly across the portfolio.
+### Analyzing the Bundle Size
 
-**Market Analysis:**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Provide detailed information for each cryptocurrency, including price charts and historical data.
-- Allow users to perform basic technical analysis using charts and indicators.
+### Making a Progressive Web App
 
-**Alerts and Notifications:**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Enable users to set price alerts for specific cryptocurrencies.
-- Notify users when cryptocurrency prices meet their specified thresholds.
+### Advanced Configuration
 
-**User-Friendly Interface:**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- Design an intuitive and responsive UI for easy navigation on various devices.
-- Ensure a seamless user experience when managing their portfolio and transactions.
+### Deployment
 
-### Getting Started
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-1. Clone the repository:
+### `npm run build` fails to minify
 
-```bash
-git clone https://github.com/jonrosenblum/Crypto-Exchange.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd my-app
-```
-
-3. Install the required dependencies:
-
-```bash
-npm install
-```
-
-4. Start the development server:
-
-```bash
-npm start
-```
-
-5. Open your web browser and navigate to http://localhost:3000 to access the CryptoX Exchange.
-
-## Usage
-
-1. **Sign Up or Log In:** Create an account or log in if you're an existing user.
-2. **Explore Cryptocurrencies:** Browse the wide range of supported cryptocurrencies and review their market data.
-3. **Monitor Portfolio:** Keep track of your portfolio's performance using the portfolio dashboard.
-4. **Stay Informed:** Access real-time market data, news, and trends to make informed decisions.
-
-## Dependencies
-
-CryptoX relies on the following libraries:
-1. React
-2. React Router
-3. Redux
-4. Chart.js
-5. Fetch
-6. react-toastify
-7. React Icons
-8. Firebase
-9. moment.js
-
-## Contributing
-
-Contributions to CryptoX are welcome! If you encounter any issues, have feature suggestions, or would like to contribute code, please open an issue or pull request on the GitHub repository.
-
-## License
-
-MIT License
-
-Copyright (c) 2023 Jon Rosenblum
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
